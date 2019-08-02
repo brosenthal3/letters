@@ -149,10 +149,11 @@
 			var showLetters = document.getElementById('letters');
 			var wordsLeft = document.getElementById('wordsLeft');
 			//show how many words you have left
-			if (words.length>1) {
-				wordsLeft.innerHTML='You have '+words.length+' words left';
+			let wordsLeftCount = words.length+1;
+			if (words.length>=1) {
+				wordsLeft.innerHTML='You have '+wordsLeftCount+' words left';
 			} else{
-				wordsLeft.innerHTML='You have '+words.length+' word left';
+				wordsLeft.innerHTML='You have 1 word left';
 			}
 			//show the word as a string
 			showWord.innerHTML = chosenWord.join('');
